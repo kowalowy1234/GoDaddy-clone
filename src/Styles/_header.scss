@@ -105,6 +105,10 @@
             margin-top: auto;
             margin-bottom: 1rem;
             flex-direction: column;
+
+            @media (max-height: 470px) {
+                flex-direction: row;
+            }
         }
     }
     
@@ -164,6 +168,12 @@
             padding: 1rem 0;
             transition: $ts02;
             width: 100%;
+
+            @media (max-height: 470px) {
+                width: auto;
+                display: inline-block;
+                padding: 1rem;
+            }
             
             &__icon {
                 font-size: 2.4rem;
@@ -174,6 +184,10 @@
                 font-size: 1.5rem;
                 margin-left: 1rem;
                 font-weight: 500;
+
+                @media (max-height: 470px) {
+                    display: none;
+                }
             }
             
             &:hover, &:focus {
@@ -193,6 +207,7 @@
     background-color: rgba(#000, 0.3);
     backdrop-filter: blur(1.3px);
     animation: fade-in 0.2s;
+    overflow: scroll;
     
     &__container {
         padding: 0 2rem;
