@@ -203,7 +203,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(1.3px);
   animation: fade-in 0.2s;
-  overflow: scroll;
+  overflow: auto;
 }
 .mobile-nav__container {
   padding: 0 2rem;
@@ -327,6 +327,10 @@ input[type=search]::-webkit-search-results-decoration {
   font-style: underline;
 }
 
+.--disable-scroll {
+  overflow: hidden;
+}
+
 .search {
   margin: 1.5rem 6rem;
 }
@@ -397,10 +401,6 @@ input[type=search]::-webkit-search-results-decoration {
   .search__icon {
     display: none !important;
   }
-}
-
-.--disable-scroll {
-  overflow: hidden;
 }
 
 .hero {

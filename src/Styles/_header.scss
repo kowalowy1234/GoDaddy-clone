@@ -207,7 +207,7 @@
     background-color: rgba(#000, 0.3);
     backdrop-filter: blur(1.3px);
     animation: fade-in 0.2s;
-    overflow: scroll;
+    overflow: auto;
     
     &__container {
         padding: 0 2rem;
