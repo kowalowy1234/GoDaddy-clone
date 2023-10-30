@@ -526,6 +526,133 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+.tools {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e7fbfb;
+  margin: 6rem 0;
+  padding: 2rem;
+}
+@media (max-width: 1060px) {
+  .tools {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 460px) {
+  .tools {
+    margin: 10rem 0;
+    padding: 2rem 0 0 0;
+  }
+}
+
+.tool {
+  max-width: 50rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #fff;
+}
+@media (max-width: 730px) {
+  .tool {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .tool {
+    border-radius: 0;
+  }
+}
+.tool:first-of-type {
+  margin-right: 10rem;
+}
+@media (max-width: 1060px) {
+  .tool:first-of-type {
+    margin-right: 0;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 460px) {
+  .tool:first-of-type {
+    margin-bottom: 0;
+  }
+}
+.tool__image {
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+  margin-top: -2rem;
+  max-height: 40rem;
+  object-fit: cover;
+}
+@media (max-width: 730px) {
+  .tool__image {
+    margin-left: 0;
+  }
+}
+.tool__header {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.tool__text {
+  font-size: 1.5rem;
+  max-width: 70%;
+  min-height: 5.4rem;
+}
+.tool__button {
+  border: 0.25rem solid #111111;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+.tool__button:hover .tool__button__icon, .tool__button:focus .tool__button__icon {
+  opacity: 1;
+}
+.tool__button:hover .tool__button__text, .tool__button:focus .tool__button__text {
+  margin-right: 2rem;
+}
+.tool__button__text {
+  margin-right: -2rem;
+  transition: all 0.2s;
+}
+.tool__button__icon {
+  opacity: 0;
+  font-size: 2rem;
+  line-height: 1.6rem;
+  transition: all 0.2s;
+}
+
+.tools-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tools-heading {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1.5rem;
+}
+
+.tools-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Libre Franklin", sans-serif;
