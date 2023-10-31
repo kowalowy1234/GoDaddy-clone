@@ -21,3 +21,26 @@
         transform: translateX(0%);
     }
 }
+
+@keyframes fade-in-slightly-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scale-in-Y {
+    0% {
+        transform: scaleY(0);
+    }
+    
+    100% {
+        transform: scaleY(1);
+    }
+    
+}

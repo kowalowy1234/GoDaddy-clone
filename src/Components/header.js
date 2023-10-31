@@ -1,11 +1,14 @@
+import {renderDrawer, drawerState, changeDrawerContent} from "./drawer.js";
+
 const headerEl = document.querySelector('.header');
 const mobileNavEl = document.querySelector('.mobile-nav');
-const mobileNavExitButton = document.querySelector('mobile-nav__exit-button')
+const mobileNavExitButton = document.querySelector('mobile-nav__exit-button');
 const bodyEl = document.querySelector('body');
 
 const headerClickHandler = (event) => {
+    const drawerEl = document.querySelector('.drawer')
     const clickedEl = event.target;
-    
+
     if (clickedEl.className.includes('hamburger')) {
         mobileNavEl.classList.remove('not-visible');
         bodyEl.classList.add('--disable-scroll');
@@ -18,6 +21,29 @@ const headerClickHandler = (event) => {
         return;
     }
 
+    if (!clickedEl.className.includes('nav__link') && drawerEl) {
+        renderDrawer();
+        bodyEl.classList.remove('--disable-scroll');
+    } 
+
+    if (clickedEl.className.includes('nav__link')) {
+        if (drawerEl && drawerState.currentDrawerName === clickedEl.textContent) {
+            console.log("render")
+            renderDrawer();
+            bodyEl.classList.remove('--disable-scroll');
+            clickedEl.blur();
+            return;
+        }
+
+        if (drawerEl && drawerState.currentDrawerName !== clickedEl.textContent) {
+            changeDrawerContent(clickedEl.textContent);
+            console.log("change")
+            return;
+        }
+        console.log("render")
+        renderDrawer(clickedEl.textContent);
+        bodyEl.classList.add('--disable-scroll');
+    }
 }
 
 headerEl.addEventListener('click', headerClickHandler);
