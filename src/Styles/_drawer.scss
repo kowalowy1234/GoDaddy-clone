@@ -1,0 +1,117 @@
+@import "keyframes";
+@import "variables";
+
+.drawer {
+    position: absolute;
+    top: 6.4rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: $color-grey-medium;
+    transform-origin: top center;
+    animation: scale-in-Y 0.4s  ease-in-out;
+}
+
+.drawer-backdrop {
+    top: 6.4rem;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: calc(100vh - 6.4rem);
+    background-color: rgba(#000, 0.3);
+    backdrop-filter: blur(1.3px);
+    animation: fade-in 0.4s;
+    cursor: pointer;
+}
+
+.drawer-content {
+    padding: 4rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    animation: fade-in-slightly-from-right 0.2s 0.4s backwards;
+    max-height: 100Vh;
+    overflow: auto;
+}
+
+.drawer-section {
+    margin-bottom: 4rem;
+
+    &__title {
+        flex: 1;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.drawer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-height: 28rem;
+
+    @media (max-width: 680px) {
+        max-height:fit-content;
+    }
+}
+
+.drawer-item {
+    font-size: 1.4rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        font-size: 2rem;
+        padding: 1rem;
+        background-color: $color-grey-light;
+        border-radius: 30%;
+    }
+    
+    &__link {
+        font-weight: 600;
+        margin-left: 1rem;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.drawer-ad {
+    margin-left: auto;
+
+    @media (max-width: 410px) {
+        margin-right: auto;
+    }
+    
+    &__image {
+
+        @media (max-width: 410px) {
+            max-width: 20rem;
+            height: 20rem;
+        }
+
+        max-width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 4rem 0;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
