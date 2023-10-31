@@ -21,7 +21,7 @@
 .hamburger {
     margin-right: 2rem;
     
-    @media (min-width: 1210px) {
+    @media (min-width: 1231px) {
         display: none;
     }
 
@@ -38,7 +38,7 @@
     &__links {
         display: flex;
 
-        @media (max-width: 1210px) {
+        @media (max-width: 1230px) {
             display: none;
         }
 

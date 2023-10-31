@@ -28,7 +28,6 @@ const headerClickHandler = (event) => {
 
     if (clickedEl.className.includes('nav__link')) {
         if (drawerEl && drawerState.currentDrawerName === clickedEl.textContent) {
-            console.log("render")
             renderDrawer();
             bodyEl.classList.remove('--disable-scroll');
             clickedEl.blur();
@@ -37,10 +36,9 @@ const headerClickHandler = (event) => {
 
         if (drawerEl && drawerState.currentDrawerName !== clickedEl.textContent) {
             changeDrawerContent(clickedEl.textContent);
-            console.log("change")
             return;
         }
-        console.log("render")
+        
         renderDrawer(clickedEl.textContent);
         bodyEl.classList.add('--disable-scroll');
     }
