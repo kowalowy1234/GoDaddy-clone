@@ -653,6 +653,72 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 600;
 }
 
+.reviews {
+  margin: 0 6rem 6rem 6rem;
+}
+@media (max-width: 430px) {
+  .reviews {
+    margin: 0 2rem 6rem 2rem;
+    max-width: 100%;
+  }
+}
+.reviews__heading {
+  font-size: 3rem;
+  max-width: 50rem;
+}
+.reviews__container {
+  display: flex;
+  overflow-x: auto;
+  column-gap: 2rem;
+  padding: 2rem 0;
+}
+.reviews ::-webkit-scrollbar {
+  height: 0.8rem;
+  background-color: rgba(237, 236, 243, 0.47);
+  border-radius: 500px;
+  overflow: hidden;
+}
+.reviews ::-webkit-scrollbar-thumb {
+  height: 100%;
+  width: 1rem;
+  background-color: rgb(161, 161, 167);
+  border-radius: 500px;
+}
+
+.review {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 40rem;
+  background-color: #f0fbfb;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  row-gap: 2rem;
+  min-height: 30rem;
+  max-width: 28rem;
+  border-radius: 10px;
+}
+.review__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.review__content {
+  font-size: 1.4rem;
+}
+.review__author {
+  margin-top: auto;
+  font-size: 1.5rem;
+}
+
+.star-icon {
+  color: rgb(63, 207, 63);
+  font-size: 2rem;
+}
+.star-icon--empty {
+  font-size: 2rem;
+  color: #cbcbd6;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Libre Franklin", sans-serif;
