@@ -1,9 +1,11 @@
 import {renderDrawer, drawerState, changeDrawerContent} from "./drawer.js";
+import { dropdownState, renderDropdown } from "./dropdown.js";
 
 const headerEl = document.querySelector('.header');
 const mobileNavEl = document.querySelector('.mobile-nav');
 const mobileNavExitButton = document.querySelector('mobile-nav__exit-button');
 const bodyEl = document.querySelector('body');
+const navButtonsEl = document.querySelector('.nav__buttons');
 
 const headerClickHandler = (event) => {
     const drawerEl = document.querySelector('.drawer')
@@ -44,4 +46,12 @@ const headerClickHandler = (event) => {
     }
 }
 
+const navButtonsClickHandler = (event) => {
+    const clickedButton = event.target.closest('.nav__button');
+    const dropdownName = clickedButton.querySelector('.nav__button__text').textContent  
+
+    renderDropdown(dropdownName, clickedButton);
+}
+
 headerEl.addEventListener('click', headerClickHandler);
+navButtonsEl.addEventListener('click', navButtonsClickHandler);
