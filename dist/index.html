@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./main.css" />
+        
+        <script src="main.js" defer></script>
+
+        <title>GoDaddy landing page clone</title>
+    </head>
+    <body class="app">
+        <header class="header">
+            <div class="mobile-nav not-visible">
+                <div class="mobile-nav__container">
+                    <div class="mobile-nav__logo">
+                        GoDaddy
+                        <button class="mobile-nav__exit-button">
+                            <i class="bx bx-x mobile-nav__x-icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav__links-mobile">
+                        <li class="nav__item-mobile">
+                            <a href="#" class="nav__link-mobile">
+                                Domain Names
+                                <i class="bx bx-right-arrow-alt nav__icon-mobile"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item-mobile">
+                            <a href="#" class="nav__link-mobile">
+                                Websites and Hosting
+                                <i class="bx bx-right-arrow-alt nav__icon-mobile"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item-mobile">
+                            <a href="#" class="nav__link-mobile">
+                                Email and Marketing
+                                <i class="bx bx-right-arrow-alt nav__icon-mobile"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__buttons-mobile">
+                        <button class="nav__button-mobile">
+                            <i class="bx bx-question-mark nav__button-mobile__icon"></i>
+                            <span class="nav__button-mobile__text">Help Center</span>
+                        </button>
+                        <button class="nav__button-mobile">
+                            <i class="bx bx-user nav__button-mobile__icon"></i>
+                            <span class="nav__button-mobile__text">Sign In</span>
+                        </button>
+                        <button class="nav__button-mobile">
+                            <i class="bx bx-cart nav__button-mobile__icon"></i>
+                            <span class="nav__button-mobile__text">Basket</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hamburger">
+                <i class="bx bx-menu hamburger__icon"></i>
+            </button>
+
+            <div class="logo">
+                GoDaddy
+            </div>
+            <div class="nav">
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <button class="nav__link">Domain Names</button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__link">Websites and Hosting</button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__link">Email and Marketing</button>
+                    </li>
+                </ul>
+                <div class="nav__buttons">
+                    <button class="nav__button">
+                        <span class="nav__button__text">Contact</span>
+                        <i class="bx bx-chevron-down nav__button__icon"></i>
+                        <i class="bx bx-phone nav__button__icon-mobile"></i>
+                    </button>
+                    <button class="nav__button">
+                        <span class="nav__button__text">Help</span>
+                        <i class="bx bx-question-mark nav__button__icon-mobile"></i>
+                    </button>
+                    <button class="nav__button">
+                        <span class="nav__button__text">Sign In</span>
+                        <i class="bx bx-chevron-down nav__button__icon"></i>
+                        <i class="bx bx-user nav__button__icon-mobile"></i>
+                    </button>
+                    <button class="nav__button">
+                        <i class="bx bx-cart nav__button__icon"></i>
+                        <i class="bx bx-cart nav__button__icon-mobile"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="search">
+            <form action="#" class="search-field">
+                <input type="search" name="search-field__input" class="search-field__input" placeholder="Type the domain you want" >
+                <button class="search-field__button">
+                    <span class="search-field__button__text">Search domain</span>
+                    <i class="bx bx-search search__icon"></i>
+                </button>
+            </form>
+        </div>
+        
+        <main class="main">
+            <div class="hero">
+                <section class="find-domain">
+                    <div class="hero__container hero__container--bigger">
+                        <span class="u-bold u-dark-font">.com Domains</span>
+                        <h2 class="hero__header">
+                            Bring <span class="u-bold u-italic">your buisness</span> <span class="u-bold">online</span> with a .com.
+                        </h2>
+                        <span class="u-dark-font">As low as $15/1st year.</span>
+                        <button class="hero__button">
+                            Find Your Domain
+                        </button>
+                        <small class="hero__info">
+                            Prices are shown for first year only. Limit 1 per customer. Other discounts availible. See cart for final pricing.
+                        </small>
+                    </div>
+                </section>
+                <section class="website-creator">
+                    <div class="hero__container hero__container--smaller">
+                        <span class="u-bold u-dark-font">Websites + Marketing</span>
+                        <h2 class="hero__header">Create <span class="u-bold">your <span class="u-italic">free</span> website</span></h2>
+                        <div class="website-creator__buttons">
+                            <button class="hero__button">
+                                Start for free
+                            </button>
+                            <a href="#" class="hero__link">Learn More</a>
+                        </div>
+                        <small class="hero__info">
+                            No charge, no obligation, nothing to cancel.**
+                        </small>
+                    </div>
+                </section>
+            </div>
+            <div class="tools">
+                <div class="tools-header">
+                    <h2 class="tools-heading">
+                        More tools to grow your buisness.
+                    </h2>
+                    <span class="tools-info">
+                        We’re known for domains, but check out other essentials to take your business further online.
+                    </span>
+                </div>
+                <section class="tool">
+                    <img src="https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1920&h=2877&dpr=1" alt="marketing" class="tool__image">
+                    <div class="tool__header">Websites + Marketing</div>
+                    <span class="tool__text">
+                        Create a professional website that'll take your business further, thanks to built-in tools like SEO and email marketing. Get started for free, no credit card required.
+                    </span>
+                    <button class="tool__button">
+                        <span class="tool__button__text">Start for Free</span>
+                        <i class="bx bx bx-right-arrow-alt tool__button__icon"></i>
+                    </button>
+                </section>
+                <section class="tool">
+                    <img src="https://images.pexels.com/photos/4050216/pexels-photo-4050216.jpeg?auto=compress&cs=tinysrgb&w=1920&h=2880&dpr=1" alt="email" class="tool__image">
+                    <div class="tool__header">Professional Email</div>
+                    <span class="tool__text">
+                        Show customers you’re a pro with an email address that matches your domain. Get Professional Email today.
+                    </span>
+                    <button class="tool__button">
+                        <span class="tool__button__text">Explore plans</span>
+                        <i class="bx bx bx-right-arrow-alt tool__button__icon"></i>
+                    </button>
+                </section>
+            </div>
+            <div class="reviews">
+                <h2 class="reviews__heading">Trusted by 21+ million customers around the world.</h2>
+                <div class="reviews__container">
+                    <section class="review">
+                        <span class="review__title">Go Daddy is worth Moving too</span>
+                        <div class="review__score">
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                        </div>
+                        <p class="review__content">
+                            In the beginning of my search for a good reliant website hosting company Go Daddy has been incredible. ********** 10 stars for the professionalism and reasonable costs. The techs have been amazing with customer service assistance.
+                        </p>
+                        <p class="review__author">John Doe</p>
+                    </section>
+                    <section class="review">
+                        <span class="review__title">Go Daddy is worth Moving too</span>
+                        <div class="review__score">
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon star-icon--empty"></i>
+                        </div>
+                        <p class="review__content">
+                            In the beginning of my search for a good reliant website hosting company Go Daddy has been incredible. ********** 10 stars for the professionalism and reasonable costs. The techs have been amazing with customer service assistance.
+                        </p>
+                        <p class="review__author">John Doe</p>
+                    </section>
+                    <section class="review">
+                        <span class="review__title">Go Daddy is worth Moving too</span>
+                        <div class="review__score">
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                        </div>
+                        <p class="review__content">
+                            In the beginning of my search for a good reliant website hosting company Go Daddy has been incredible. ********** 10 stars for the professionalism and reasonable costs. The techs have been amazing with customer service assistance.
+                        </p>
+                        <p class="review__author">John Doe</p>
+                    </section>
+                    <section class="review">
+                        <span class="review__title">Go Daddy is worth Moving too</span>
+                        <div class="review__score">
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                        </div>
+                        <p class="review__content">
+                            In the beginning of my search for a good reliant website hosting company Go Daddy has been incredible. ********** 10 stars for the professionalism and reasonable costs. The techs have been amazing with customer service assistance.
+                        </p>
+                        <p class="review__author">John Doe</p>
+                    </section>
+                    <section class="review">
+                        <p class="review__title">Go Daddy is worth Moving too</p>
+                        <div class="review__score">
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon"></i>
+                            <i class="bx bxs-star star-icon star-icon--empty"></i>
+                        </div>
+                        <p class="review__content">
+                            In the beginning of my search for a good reliant website hosting company Go Daddy has been incredible. ********** 10 stars for the professionalism and reasonable costs. The techs have been amazing with customer service assistance.
+                        </p>
+                        <p class="review__author">John Doe</p>
+                    </section>
+                </div>
+                <section class="trust-pilot"></section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-header">
+                <h2 class="footer-header-heading">Prices exclude tax. ICANN fees included.</h2>
+            </div>
+            <ul class="footer-list">
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">About GoDaddy</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">About us</li>
+                        <li class="footer__link">Newsroom</li>
+                        <li class="footer__link">Investor relations</li>
+                        <li class="footer__link">Careers</li>
+                        <li class="footer__link">Corporate Responsibility</li>
+                        <li class="footer__link">Trust center</li>
+                        <li class="footer__link">Legal</li>
+                    </ul>
+                </li>
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">Support</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">Product support</li>
+                        <li class="footer__link">Community</li>
+                        <li class="footer__link">Report abuse</li>
+                        <li class="footer__link">Resources</li>
+                    </ul>
+                </li>
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">Resources</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">Webmail</li>
+                        <li class="footer__link">WHOIS</li>
+                        <li class="footer__link">ICANN Confirmation</li>
+                        <li class="footer__link">Venture forward: Microbuisness data</li>
+                        <li class="footer__link">Designers & Developers</li>
+                        <li class="footer__link">Corporate domains</li>
+                        <li class="footer__link">Redeem code</li>
+                        <li class="footer__link">Product catalog</li>
+                        <li class="footer__link">Buisness name generator</li>
+                    </ul>
+                </li>
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">Partner programs</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">Affiliates</li>
+                        <li class="footer__link">Reseller programs</li>
+                        <li class="footer__link">GoDaddy Pro</li>
+                    </ul>
+                </li>
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">Account</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">My products</li>
+                        <li class="footer__link">Renewals & billing</li>
+                        <li class="footer__link">Create account</li>
+                    </ul>
+                </li>
+                <li class="footer-list__item">
+                    <p class="footer-list__item-title">Shopping</p>
+                    <ul class="footer__links">
+                        <li class="footer__link">Buy a domain</li>
+                        <li class="footer__link">Websites</li>
+                        <li class="footer__link">WordPress</li>
+                        <li class="footer__link">Hosting</li>
+                        <li class="footer__link">Web security</li>
+                        <li class="footer__link">Email & office</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <section class="footer-social">
+                <p class="logo">GoDaddy</p>
+                <div class="platform-icons">
+                    <i class="bx bxl-facebook-circle platform-icon"></i>
+                    <i class="bx bxl-instagram platform-icon"></i>
+                    <i class="bx bxl-youtube platform-icon"></i>
+                </div>
+            </section>
+
+            <section class="footer-legal">
+                <div class="footer-container">
+                    <p class="copy">
+                        Copyright © 1999 - 2023 GoDaddy Operating Company, LLC. All Rights Reserved. The GoDaddy word mark is a registered trademark of GoDaddy Operating Company, LLC in the US and other countries. The “GO” logo is a registered trademark of GoDaddy.com, LLC in the US.
+                    </p>
+                    <p class="terms">Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.</p>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#" class="footer-legal__link">Legal</a>
+                    <a href="#" class="footer-legal__link">Privacy policy</a>
+                    <a href="#" class="footer-legal__link">Cookies</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

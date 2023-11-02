@@ -1,0 +1,45 @@
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus, &:hover {
+        outline: none;
+    }
+}
+
+
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+
+    &:focus, &:hover {
+        outline: none;
+    }
+}
+
+input {
+    border: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

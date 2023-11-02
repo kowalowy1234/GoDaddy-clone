@@ -1,0 +1,34 @@
+@import "variables";
+
+// UTILITY CLASSES
+.not-visible {
+    display: none;
+}
+
+.u-bold {
+    font-weight: 600;
+}
+
+.u-bolder {
+    font-weight: 700;
+}
+
+.u-dark-font {
+    color: $color-grey-darker;
+}
+
+.u-light-font {
+    color: $color-grey-light;
+}
+
+.u-italic {
+    font-style: italic;
+}
+
+.u-underline {
+    font-style: underline;
+}
+
+.--disable-scroll {
+    overflow: hidden;
+}
