@@ -2,7 +2,9 @@
 
 ### This is a visual clone of the GoDaddy service landing page.
 
-Click [here](https://www.godaddy.com/) to visit the real thing.
+Click [here](https://www.godaddy.com/) to visit the official GoDaddy website.
+
+[Open the deployed project](https://kowalowy1234.github.io/GoDaddy-clone/)
 
 ### Technologies used
 
