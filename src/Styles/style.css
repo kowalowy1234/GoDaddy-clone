@@ -141,10 +141,12 @@
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 @media (max-width: 670px) {
   .nav__button {
     padding: 1.5rem;
+    position: inherit;
   }
 }
 @media (max-width: 510px) {
@@ -882,6 +884,96 @@ input[type=search]::-webkit-search-results-decoration {
 .star-icon--empty {
   font-size: 2rem;
   color: #cbcbd6;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 2rem);
+  right: 0;
+  z-index: 1;
+  color: #111111;
+  max-width: 40rem;
+  min-width: max-content;
+  text-align: left;
+}
+@media (max-width: 670px) {
+  .dropdown {
+    top: 100%;
+    min-width: 100Vw;
+  }
+}
+
+.dropdown-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1882352941);
+  border-radius: 0.3rem;
+  position: relative;
+  padding: 2rem;
+}
+@media (max-width: 670px) {
+  .dropdown-container {
+    border-radius: 0;
+    padding-left: 3.5rem;
+  }
+  .dropdown-container::before, .dropdown-container::after {
+    content: none !important;
+  }
+}
+.dropdown-container::before {
+  content: "";
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1882352941);
+  border-radius: 0.3rem;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -0.8rem;
+  right: 2rem;
+  z-index: -1;
+}
+.dropdown-container::after {
+  content: "";
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -0.8rem;
+  right: 2rem;
+}
+
+.dropdown-section {
+  border-bottom: 0.2rem solid #d8efef;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.dropdown-section:first-of-type {
+  padding-top: 0;
+}
+.dropdown-section:last-of-type {
+  padding-top: 2rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.dropdown-section__title {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.dropdown-section__text {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.dropdown-section__link {
+  color: #09757a;
+  text-decoration: underline;
+  font-size: 1.6rem;
 }
 
 html {

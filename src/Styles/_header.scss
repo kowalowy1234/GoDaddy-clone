@@ -122,9 +122,11 @@
         margin-left: 0.5rem;
         display: flex;
         align-items: center;
+        position: relative;
 
         @media (max-width: 670px) {
             padding: 1.5rem;
+            position: inherit;
         }
 
         @media (max-width: 510px) {
