@@ -976,6 +976,97 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 1.6rem;
 }
 
+.footer {
+  background-color: #111111;
+  color: #d8efef;
+}
+.footer-header {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #454545;
+}
+.footer-header-heading {
+  text-align: center;
+}
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+  gap: 4rem;
+}
+.footer-list__item {
+  flex: 1;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer-list__item-title {
+  font-weight: 600;
+}
+.footer__links {
+  font-size: 1.4rem;
+  color: #949498;
+}
+.footer__link {
+  margin-top: 2rem;
+}
+.footer__link:hover, .footer__link:focus {
+  text-decoration: underline;
+}
+.footer-legal {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  row-gap: 2rem;
+}
+.footer-legal-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  max-width: 20rem;
+}
+.footer-legal__link {
+  margin-left: 1rem;
+}
+.footer-legal__link:first-of-type {
+  margin-left: 0;
+}
+.footer-legal__link:hover, .footer-legal__link:focus {
+  text-decoration: underline;
+}
+.footer-container {
+  color: #949498;
+  font-size: 1.2rem;
+  max-width: 84rem;
+}
+.footer-social {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #454545;
+  display: flex;
+  align-items: center;
+}
+
+.platform-icons {
+  margin-left: auto;
+}
+.platform-icon {
+  font-size: 3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #454545;
+  transition: all 0.2s;
+}
+.platform-icon:hover, .platform-icon:focus {
+  color: #d8efef;
+}
+
+.copy {
+  margin-bottom: 2rem;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Libre Franklin", sans-serif;
