@@ -1,0 +1,115 @@
+@import "variables";
+
+.footer {
+    background-color: $color-grey-darker;
+    color: $color-grey-light;
+    
+    &-header {
+        padding: 2rem;
+        border-bottom: 0.1rem solid $color-grey-medium;
+        
+        &-heading {
+            text-align: center;
+        }
+    }
+    
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem;
+        gap: 4rem;
+        
+        &__item {
+            flex: 1;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            
+            &-title {
+                font-weight: 600;
+            }
+        }
+    }
+    
+    &__links {
+        font-size: 1.4rem;
+        color: #949498;
+    }
+    
+    &__link {
+        margin-top: 2rem;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }   
+    }
+    
+    &-legal {
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        row-gap: 2rem;
+
+        &-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 20rem;
+        }
+
+        &__link {
+            margin-left: 1rem;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:hover, &:focus {
+                text-decoration: underline;
+            }   
+        }
+    }
+
+    &-container {
+        color: #949498;
+        font-size: 1.2rem;
+        max-width: 84rem;
+    }
+    
+    &-social {
+        padding: 2rem;
+        border-bottom: 0.1rem solid $color-grey-medium;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.platform {
+    &-icons {
+        margin-left: auto;
+    }
+
+    &-icon {
+        font-size: 3rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        color: $color-grey-medium;
+        transition: $ts02;
+
+        &:hover, &:focus {
+            color: $color-grey-light;
+        }   
+    }
+}
+
+.copy {
+    margin-bottom: 2rem;
+}
+
+.terms {
+
+}
