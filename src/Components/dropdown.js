@@ -71,6 +71,5 @@ export const renderDropdown = (name, parent) => {
         </div>
         </div>
         `
-        console.log(parent)
     parent.insertAdjacentHTML('afterbegin', newDropdownEl);
 }
